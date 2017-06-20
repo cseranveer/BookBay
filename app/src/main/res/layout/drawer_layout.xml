@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_drawer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing_huge"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/spacing_xhuge"
+            android:layout_height="@dimen/spacing_xhuge"
+            android:src="@drawable/my_profile_ph" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/font_normal"
+            android:text="Your Account"
+            android:textAllCaps="true"
+            android:textColor="@color/sign_in"
+            android:textSize="@dimen/font_small" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_home"
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_home"
+                android:text="@string/text_tv_home" />
+
+            <TextView
+                android:id="@+id/item_add_book"
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/date_posts"
+                android:text="Add Book" />
+
+            <TextView
+                android:id="@+id/item_my_book"
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/my_dates"
+                android:text="My Books" />
+
+            <TextView
+                android:id="@+id/item_my_enquiries"
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/mmemberships"
+                android:text="My Enquiries" />
+
+            <TextView
+                android:id="@+id/item_bid"
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/fav"
+                android:text="Bid" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:letterSpacing="0.09"
+            android:text="@string/text_tv_logout"
+            android:textColor="@color/sign_in"
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/spacing_huge"
+        android:src="@drawable/side_menu_exut" />
+
+</RelativeLayout>
